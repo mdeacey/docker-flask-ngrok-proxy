@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    ports:
+      - "5002:5001"  # Container:Host
+      - "4040:4040"  # Ngrok
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=app.py
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+    volumes:
+      - .:/app
+    env_file:
+      - .env
