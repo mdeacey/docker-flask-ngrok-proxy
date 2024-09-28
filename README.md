@@ -27,7 +27,7 @@ A simple example of a Dockerized Flask application using Ngrok to expose the loc
 ### Step 1: Clone the Repository
 
 ```sh
-git clone <repository-url>
+git clone <https://github.com/mdeacey/docker-flask-ngrok-proxy.git>
 cd docker-flask-ngrok-proxy
 ```
 
